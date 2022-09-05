@@ -105,20 +105,15 @@ class SavingAccount extends Account{
 
 class Acc{
     public static void main(String[] args) {
-        Account a1=new Account("Jainam Parekh", 8469422902L);
+        Account a1=new Account("Dev Sapariya", 999999999L);
         System.out.println(a1.checkBalance());
         System.out.println(a1.Deposit(10000));
         System.out.println(a1.checkBalance());
         System.out.println(a1.withdraw(500));
         a1.getAccinfo();
 
-//        Account a2=new Account();
-//        a2.setAccount("Vasudev",7890964263L);
-//        a2.Deposit(10000);
-//        a2.withdraw(1300);
-//        a2.getAccinfo();
 
-        SavingAccount s1=new SavingAccount("Vasudev",7912982309L,7);
+        SavingAccount s1=new SavingAccount("Mit",8888888888L,7);
         System.out.println(s1.checkBalance());
         System.out.println(s1.Deposit(10000));
         System.out.println(s1.checkBalance());
