@@ -19,7 +19,6 @@ abstract class Measurement {
         this.inch2 = inch2;
         unit1 = (foot1 * 12) + inch1;
         unit2 = (foot2 * 12) + inch2;
-
     }
 
     Measurement(Measurement m) {
@@ -66,7 +65,7 @@ class MeasurementPrint extends Measurement {
 
     @Override
     Measurement getDifference(Measurement m) {
-
+    
         return null;
     }
 }
@@ -85,7 +84,6 @@ class HeightMeasurement extends Measurement {
     @Override
     Measurement getDifference(Measurement m) {
         int diff = m.unit2 - m.unit1;
-
         int foot = (diff) / 12;
         int inch = diff % 12;
 
@@ -99,6 +97,7 @@ public class Question_measurement {
     public static void main(String[] args) {
         Measurement m = new HeightMeasurement(6, 2, 9, 3);
         ((MeasurementPrint) m.getDifference(m)).printfootinch();
+
 
     }
 }
