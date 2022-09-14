@@ -9,9 +9,9 @@ public class Residency_main {
         residency.LuxuriousResidency r1 = new LuxuriousResidency("PYTHON", 1,2000,63);
         System.out.println(r1.getPriceOfResidency());
         
-        Rentable r2 = (Rentable)r;
+        Rentable r3 = (Rentable)r;
     
-        System.out.println(r2.getRent());
+        System.out.println(r3.getRent());
         
     }
 }
