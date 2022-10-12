@@ -1,4 +1,4 @@
-class InvalidBoxException extends Throwable{
+class InvalidBoxException extends Exception{
     InvalidBoxException(String s){
         super(s);
     }
