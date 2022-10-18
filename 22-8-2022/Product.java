@@ -9,24 +9,29 @@ class ProductTest {
         pID = 101 + count++;
         this.pName = pName;
         pRate = rate;
+        System.out.println("Constructor called with " + pName + " and " + rate);
+        System.out.println("Name: " + pName + " Rate: " + rate);
     }
 
     public ProductTest(String name) {
         pID = 101 + count++;
         pName = name;
-        pRate = 100;
+        System.out.println("Constructor called with " + name);
+        System.out.println("Name: " + name);
+
     }
 
-    public ProductTest(){
+    public ProductTest() {
         this("NoName", 0);
+        System.out.println("Default constructor called");
+        System.out.println("NoName");
     }
 }
 
 public class Product {
     public static void main(String[] args) {
-        ProductTest p1 = new ProductTest("name", 2);
-
-        System.out.println("Name is: " + p1.pName);
-
+        ProductTest p1 = new ProductTest("Product1", 2);
+        ProductTest p2 = new ProductTest("Product2");
+        ProductTest p3 = new ProductTest();
     }
 }

@@ -57,17 +57,11 @@ abstract class Residency {
     abstract long getPriceOfResidency();
 }
 
-class Semi_FurnishedResidency extends Residency {
+abstract class Semi_FurnishedResidency extends Residency {
 
     int furnitureCharge = 1000;
     int parkingCharge = 99;
     int price;
-
-    @Override
-    long getPriceOfResidency() {
-        price = (getUnit_rate() * getArea()) + furnitureCharge + parkingCharge;
-        return price;
-    }
 
     Semi_FurnishedResidency() {
         super();
@@ -113,25 +107,31 @@ interface Rentable {
 class TwoBHKResidency extends Semi_FurnishedResidency implements Rentable {
     long rent;
 
+    public TwoBHKResidency(String name, int rNumber, int area, int unit_rate) {
+        super(name, rNumber, area, unit_rate);
+    }
     @Override
     public long getRent() {
         rent = (getPriceOfResidency() * 5) / 100;
         return rent;
+    }
+    @Override
+    long getPriceOfResidency() {
+        price = (getUnit_rate() * getArea()) + furnitureCharge + parkingCharge;
+        return price;
     }
 
 }
 
 public class Residency_main {
     public static void main(String[] args) {
-        Semi_FurnishedResidency r = new Semi_FurnishedResidency("JAVA", 7, 1800, 45);
-        System.out.println(r.getPriceOfResidency());
-
         LuxuriousResidency r1 = new LuxuriousResidency("PYTHON", 1,2000,63);
-        System.out.println(r1.getPriceOfResidency());
+        System.out.println("The price of Luxurious Residency is: "+r1.getPriceOfResidency());
         
-        Rentable r2 = (Rentable)r;
-    
-        System.out.println(r2.getRent());
+
+        Semi_FurnishedResidency r2 = new TwoBHKResidency("JAVA", 2, 1000, 50);
+        System.out.println("The price of Semi Furnished Residency Residency is:"+r2.getPriceOfResidency());
+        System.out.println("Rent of 2 BHK  Semi Furnished Residency is :"+((Rentable) r2).getRent());
         
     }
 }

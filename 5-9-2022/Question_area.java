@@ -66,8 +66,8 @@ public class Question_area {
         TwoDShape t1 = new Rectangle(t);
         Rectangle r = new Rectangle(4, 6);
         TwoDShape tri = new Triangle(3, 6);
-        System.out.println(t.getArea());
-        System.out.println(tri.getArea());
+        System.out.println("The Area Of Rectangle is: " + t.getArea());
+        System.out.println("The Area Of triangle is: " + tri.getArea());
     }
 
 }

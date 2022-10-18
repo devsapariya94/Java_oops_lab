@@ -53,6 +53,3 @@ class JavaPassByValue{
 	}
 }
 
-public class PassByValue {
-    
-}

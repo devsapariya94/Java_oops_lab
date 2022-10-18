@@ -10,11 +10,11 @@ public class PropertiesToFile{
         fout= new FileOutputStream("Test.txt");
         int data= 0;
         System.out.println(fin.available());
-        String pr= "Prop";
+        String pr= "Prop\n";
         byte[] b= pr.getBytes();
         fout.write(b);
         fout.write((new String("Properties\n")).getBytes());
-        fout.write(System.getProperty("user.name").getBytes());
+        fout.write(System.getProperty("user.dir").getBytes());
 
         fout.write(System.getProperty("line.separator").getBytes());
         fout.write(System.getProperty("java.version").getBytes());

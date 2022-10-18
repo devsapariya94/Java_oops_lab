@@ -1,15 +1,4 @@
 import java.util.Scanner;
-
-// print this dimond pattern:
-                    //       *   
-                    //      *  *
-                    //    *   *  *
-	                //    *  *  *  * 
-                    //     *   *  *
-                    //       *   *
-                    //          *	
-
-
 public class Q9 {
     public static void main(String[] args) {
         System.out.print("Enter the number of Maximum number of diamond in the row: ");

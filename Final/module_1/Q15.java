@@ -1,4 +1,3 @@
-// Write a program which will overload method calculateArea which calculates area of different shapes like circle, rectangle and square.
 public class Q15 {
     static double calculateArea (int r){
         return 3.14*r*r;

@@ -96,6 +96,7 @@ class HeightMeasurement extends Measurement {
 public class Question_measurement {
     public static void main(String[] args) {
         Measurement m = new HeightMeasurement(6, 2, 9, 3);
+        System.out.print("The Difference is : ");
         ((MeasurementPrint) m.getDifference(m)).printfootinch();
 
 

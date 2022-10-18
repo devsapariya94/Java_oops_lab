@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-// Write a program which will perform following functionality on String:
-// a) convert to uppercase b) convert to lowercase c) count total words d) substring  e) If String ends with Java then concat standardEdition to it f) trim g) string length h) Check weather two strings are equal or not.
-
 public class Q13 {
     public static void main(String[] args) {
         System.out.print("Enter the String1: ");

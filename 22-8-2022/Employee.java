@@ -27,15 +27,14 @@ class EmployeeDetail{
 
 public class Employee {
     public static void main(String[] args) {
-        EmployeeDetail e1 = new EmployeeDetail("Dev", 1, 5, 20);
-        EmployeeDetail e2 = new EmployeeDetail("Dev", 1, 5, 20);
-        EmployeeDetail e3 = new EmployeeDetail("Dev", 1, 5, 20);
-        EmployeeDetail e4 = new EmployeeDetail("Dev", 1, 5, 20);
-        EmployeeDetail e5 = new EmployeeDetail("Dev", 1, 5, 20);
+        EmployeeDetail e1 = new EmployeeDetail("Dev", 1, 6, 20);
+        EmployeeDetail e2 = new EmployeeDetail("Het", 2, 5, 10);
+        EmployeeDetail e3 = new EmployeeDetail("Heet", 3, 6, 20);
+        EmployeeDetail e4 = new EmployeeDetail("Mit", 4, 4, 15);
         e1.get();
         e2.get();
         e3.get();
         e4.get();
-        e5.get();
+
     }
 }

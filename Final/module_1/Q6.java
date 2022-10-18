@@ -1,8 +1,11 @@
-//Write a program to print first N prime numbers
+import java.util.Scanner;
+
 public class Q6 {
     
     public static void main(String[] args) {
-        int n = 5;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int n = sc.nextInt();
         int count = 0;
         int i = 2;
         while (count < n) {
