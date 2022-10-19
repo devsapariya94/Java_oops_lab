@@ -1,6 +1,4 @@
 import java.util.Scanner;
-
-// Write a program which will make calculator application. Use Math class methods like pow, abs, max, min, exp, log, sqrt, cbrt, sin etc
 public class Q17 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
