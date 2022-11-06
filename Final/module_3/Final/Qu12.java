@@ -38,7 +38,7 @@ class BankAccount{
 
 }
 
-public class BankAcc {
+public class Qu12 {
     public static void main(String[] args) {
         BankAccount a1 = new BankAccount("abc",  100);
         a1.withdraw(1000);
