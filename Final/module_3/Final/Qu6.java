@@ -1,5 +1,3 @@
-//Write a program which will read a text file and print the count of total number of Lines, Words and Characters in it. (Use BufferedReader).
-
 import java.io.*;
 public class Qu6 {
     public static void main(String[] args) {

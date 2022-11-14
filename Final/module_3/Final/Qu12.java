@@ -1,46 +1,46 @@
-class InsufficientFunds extends Throwable{
-    InsufficientFunds(String s){
+class InsufficientFunds extends Throwable {
+    InsufficientFunds(String s) {
         super(s);
     }
 }
 
-class IllegalTransfer extends Throwable{
-    IllegalTransfer(String s){
+class IllegalTransfer extends Throwable {
+    IllegalTransfer(String s) {
         super(s);
     }
 }
-class BankAccount{
+
+class BankAccount {
     String name;
     int balance;
-    BankAccount(String s, int b){
-        name=s;
-        balance=b;
+
+    BankAccount(String s, int b) {
+        name = s;
+        balance = b;
     }
 
-    void withdraw(int a){
-        try{
-            if (a>balance){
+    void withdraw(int a) {
+        try {
+            if (a > balance) {
                 throw new InsufficientFunds("insufficient balance in the account");
-            }
-            else{
-                balance=balance-a;
+            } else {
+                balance = balance - a;
                 System.out.println("Withdraw Done");
             }
-        }
-        catch(InsufficientFunds e){
+        } catch (InsufficientFunds e) {
             System.out.println(e);
         }
     }
 
-    void deposit(int a){
-        
+    void deposit(int a) {
+
     }
 
 }
 
 public class Qu12 {
     public static void main(String[] args) {
-        BankAccount a1 = new BankAccount("abc",  100);
+        BankAccount a1 = new BankAccount("abc", 100);
         a1.withdraw(1000);
     }
 }
